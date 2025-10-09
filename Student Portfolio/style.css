@@ -191,8 +191,8 @@ body.dark-mode .sidebar {
 }
 
 .contact-info {
-  font-size: 15px;
-  margin: 15px 0;
+  font-size: 18px;
+  margin: 20px 0;
 }
 
 .social-icons {
@@ -312,3 +312,4 @@ body.dark-mode .project-card {
   /* reduce content top padding on smaller screens so there's less empty space */
   .content { padding: 180px 20px 20px 20px }
 }
+
