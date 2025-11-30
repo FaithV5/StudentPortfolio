@@ -1710,6 +1710,12 @@ input:checked + .slider:before {
 .languages-chart-card{max-width:520px;margin:0 auto;padding:1rem}
 .languages-chart-card canvas{width:100% !important;height:360px !important}
 
+/* Chart wrapper: provides consistent sizing for line charts */
+.chart-wrapper{position:relative;width:100%;min-height:300px}
+.chart-wrapper canvas,
+#gwaChart,
+#rankingChart{width:100% !important;height:340px !important}
+
 .gwa-scoreboards.card{padding:18px}
 .gwa-card .gwa-label{font-size:0.85rem;color:var(--text-light);margin-bottom:6px}
 .gwa-card .gwa-value{font-size:1.4rem;font-weight:700;color:var(--text-dark)}
@@ -1733,6 +1739,16 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 768px) {
+  .gwa-grid{flex-wrap:wrap}
+  .gwa-card{flex:1 1 45%;min-width:140px}
+
+  .chart-wrapper canvas,
+  #gwaChart,
+  #rankingChart,
+  .languages-chart-card canvas{height:220px !important}
+
+  .image-frame{width:180px;height:180px}
+
   .timeline-item {
     flex-direction: column;
   }
