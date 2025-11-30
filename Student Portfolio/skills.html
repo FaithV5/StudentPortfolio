@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills — Faith M. Valencia</title>
+  <title>Skills</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -14,7 +14,6 @@
 <body>
   <div class="sky" aria-hidden="true"></div>
 
-  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">
@@ -51,7 +50,7 @@
       </div>
 
       <div class="skills-container">
-        <!-- Programming Languages -->
+        <div class="skills-row">
         <div class="skill-category">
           <h2 class="category-title">
             <i class="fas fa-code category-icon"></i>
@@ -126,14 +125,24 @@
           </div>
         </div>
 
-        <!-- Tools & Technologies -->
+        <div class="skill-category">
+          <h2 class="category-title">
+            <i class="fa-solid fa-chart-pie category-icon"></i>
+            Top Languages by Repository
+          </h2>
+          <div class="projects-cta small-gap">
+            <div class="card languages-chart-card">
+              <canvas id="languagesChart" aria-label="Top languages donut chart" role="img"></canvas>
+            </div>
+          </div>
+        </div>
+        </div>
+
         <div class="skill-category">
           <h2 class="category-title">
             <i class="fas fa-tools category-icon"></i>
             Tools & Technologies
           </h2>
-          <p class="category-description">Development tools, frameworks, and technologies I use to build modern applications.</p>
-          
           <div class="tools-grid">
             <div class="tool-item">
               <div class="tool-icon">
@@ -208,14 +217,12 @@
               </div>
             </div>
 
-          </div> <!-- .tools-grid -->
-        </div> <!-- .skill-category -->
-      </div> <!-- .skills-container -->
-    </section> <!-- .skills-section -->
-
+          </div> 
+        </div> 
+      </div> 
+    </section> 
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-content">
@@ -244,13 +251,13 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2023 Faith M. Valencia. All rights reserved.</p>
+        <p>&copy; <span id="footer-year"></span> Faith M. Valencia. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
   <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="skills-analytics.js"></script>
 </body>
-
 </html>
-
