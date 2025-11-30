@@ -53,7 +53,6 @@ body {
   flex-direction: column;
 }
 
-/* Sky Background */
 .sky {
   position: fixed;
   top: 0;
@@ -70,7 +69,6 @@ body {
   background: radial-gradient(ellipse at top, #1a2a44 0%, #0d1b2a 40%, #000814 100%);
 }
 
-/* Cloud and Star Animations */
 .cloud {
   position: absolute;
   background: rgba(255, 255, 255, 0.8);
@@ -100,7 +98,6 @@ body {
   100% { opacity: 1; }
 }
 
-/* Navigation */
 .navbar {
   position: fixed;
   top: 0;
@@ -186,7 +183,6 @@ body {
   border-radius: 2px;
 }
 
-/* Theme Switch */
 .theme-switch {
   display: inline-block;
   position: relative;
@@ -251,7 +247,6 @@ input:checked + .slider:before {
   color: #cbd5e1;
 }
 
-/* Main Content */
 .content {
   max-width: 1200px;
   margin: 0 auto;
@@ -259,7 +254,6 @@ input:checked + .slider:before {
   flex: 1;
 }
 
-/* About Section */
 .about-section {
   width: 100%;
 }
@@ -424,7 +418,6 @@ input:checked + .slider:before {
   font-weight: 500;
 }
 
-/* Organization Section */
 .org-membership {
   margin-top: 3rem;
 }
@@ -487,16 +480,13 @@ input:checked + .slider:before {
   margin-bottom: 0.5rem;
 }
 
-/* Footer */
 .site-footer {
-  /* Light-mode footer (default) */
   background: var(--bg-alt);
   border-top: 1px solid var(--border);
   padding: 2.25rem 0 1rem;
   margin-top: auto;
 }
 
-/* Dark-mode footer override */
 .dark-mode .site-footer {
   background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
   border-top: 1px solid rgba(255,255,255,0.03);
@@ -582,7 +572,6 @@ input:checked + .slider:before {
   border-top: 1px solid rgba(255,255,255,0.04);
 }
 
-/* Cards for other pages */
 .project-card, .seminar-card, .education-card {
   background: var(--card-bg);
   padding: 1.5rem;
@@ -636,7 +625,6 @@ input:checked + .slider:before {
   text-decoration: none;
 }
 
-/* Skills Section */
 .skills-list {
   list-style: none;
   max-width: 800px;
@@ -676,14 +664,12 @@ input:checked + .slider:before {
   transition: width 1.2s cubic-bezier(0.2, 0.9, 0.2, 1);
 }
 
-/* Grid Layout for other pages */
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
-/* Responsive Design */
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -795,7 +781,6 @@ input:checked + .slider:before {
   }
 }
 
-/* Animation for page load */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -811,7 +796,6 @@ input:checked + .slider:before {
   animation: fadeInUp 0.6s ease forwards;
 }
 
-/* Print Styles */
 @media print {
   .navbar, .theme-switch, .social-icons, .sky, .site-footer {
     display: none !important;
@@ -827,7 +811,6 @@ input:checked + .slider:before {
   }
 }
 
-/* Skills Section Styles */
 .skills-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -853,7 +836,6 @@ input:checked + .slider:before {
   line-height: 1.6;
 }
 
-/* Skill Categories */
 .skill-category {
   margin-bottom: 4rem;
   padding: 2.5rem;
@@ -884,11 +866,12 @@ input:checked + .slider:before {
   line-height: 1.6;
 }
 
-/* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: start; 
+  grid-auto-rows: auto;
 }
 
 @media (max-width: 1200px) {
@@ -898,11 +881,12 @@ input:checked + .slider:before {
 }
 
 .skill-item {
-  padding: 1.5rem;
+  padding: 0.9rem 1rem;
   background: var(--bg-alt);
   border-radius: var(--radius);
   border: 1px solid var(--border);
   transition: var(--transition);
+  min-height: 0;
 }
 
 .skill-item:hover {
@@ -913,8 +897,8 @@ input:checked + .slider:before {
 .skill-header {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .skill-icon {
@@ -935,23 +919,20 @@ input:checked + .slider:before {
   color: var(--text-dark);
 }
 
-/* Tools Grid */
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
-/* Projects CTA (link to Analytics page) */
 .projects-cta {
   text-align: center;
   margin: 2rem 0 3rem;
 }
-.projects-cta .project-link {
-  padding: 0.9rem 1.5rem;
-}
+.projects-cta .project-link {  padding: 0.9rem 1.5rem; }
 
-/* Analytics grid (embedded dashboard links) */
+.projects-cta.small-gap { margin-top: 1rem }
+
 .analytics-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1008,7 +989,6 @@ input:checked + .slider:before {
   font-size: 0.9rem;
 }
 
-/* Soft Skills Grid */
 .soft-skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1055,7 +1035,6 @@ input:checked + .slider:before {
   line-height: 1.4;
 }
 
-/* Certifications */
 .certifications-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1104,7 +1083,6 @@ input:checked + .slider:before {
   font-style: italic;
 }
 
-/* Learning Objectives */
 .learning-objectives {
   padding: 1.5rem;
   background: var(--bg-alt);
@@ -1129,7 +1107,6 @@ input:checked + .slider:before {
   line-height: 1.5;
 }
 
-/* Responsive Design for Skills Page */
 @media (max-width: 768px) {
   .section-header h1 {
     font-size: 2.2rem;
@@ -1176,13 +1153,11 @@ input:checked + .slider:before {
   }
 }
 
-/* Experience Page Styles */
 .experience-section {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* Timeline Styles */
 .timeline-container {
   position: relative;
   padding: 2rem 0;
@@ -1316,7 +1291,6 @@ input:checked + .slider:before {
   color: var(--text);
 }
 
-/* Stats Section */
 .stats-section {
   margin-top: 4rem;
   text-align: center;
@@ -1374,7 +1348,6 @@ input:checked + .slider:before {
   font-size: 0.9rem;
 }
 
-/* Seminars Page Styles */
 .seminars-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -1538,7 +1511,6 @@ input:checked + .slider:before {
   text-align: center;
 }
 
-/* Projects Page Styles */
 .projects-section {
   max-width: 1400px;
   margin: 0 auto;
@@ -1632,7 +1604,6 @@ input:checked + .slider:before {
   line-height: 1.6;
 }
 
-/* Project meta (year) */
 .project-meta {
   margin-bottom: 1rem;
 }
@@ -1722,7 +1693,45 @@ input:checked + .slider:before {
   text-align: center;
 }
 
-/* Responsive Design */
+.edu-charts{display:grid;grid-template-columns:1fr;gap:18px;margin:18px 0}
+@media(min-width:900px){.edu-charts{grid-template-columns:1fr 1fr}}
+.card{background:var(--card-bg);border-radius:8px;padding:16px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.scoreboard{display:flex;gap:12px;align-items:center}
+.score-value{font-size:2rem;font-weight:700}
+.score-meta{font-size:0.9rem;color:var(--text-light)}
+
+.gwa-scoreboards{margin-bottom:16px}
+.gwa-grid{display:flex;flex-wrap:nowrap;gap:12px;margin-top:12px;overflow-x:hidden}
+.gwa-card{padding:12px;border-radius:8px;background:var(--card-bg);box-shadow:0 1px 4px rgba(0,0,0,0.04);border:1px solid var(--border);min-width:0;flex:1 1 0;box-sizing:border-box}
+
+.gwa-card .gwa-label, .gwa-card .gwa-honor, .gwa-card .gwa-rank{white-space:normal}
+.gwa-card .gwa-value{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.languages-chart-card{max-width:520px;margin:0 auto;padding:1rem}
+.languages-chart-card canvas{width:100% !important;height:360px !important}
+
+.gwa-scoreboards.card{padding:18px}
+.gwa-card .gwa-label{font-size:0.85rem;color:var(--text-light);margin-bottom:6px}
+.gwa-card .gwa-value{font-size:1.4rem;font-weight:700;color:var(--text-dark)}
+.gwa-card .gwa-rank{font-size:0.85rem;color:var(--text-light);margin-top:6px}
+.gwa-card .gwa-honor{font-size:0.85rem;color:var(--text-light);margin-top:6px;font-style:italic}
+
+.skills-row{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-bottom:1.5rem}
+@media(min-width:900px){
+  .skills-row{grid-template-columns:1fr 1fr;align-items:stretch}
+
+  .skill-category{display:flex;flex-direction:column}
+
+  .skill-category > .card{display:flex;flex-direction:column;flex:1}
+
+  .languages-chart-card{max-width:520px;margin:0 auto;padding:1rem;display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:420px}
+  .languages-chart-card canvas{width:100% !important;height:360px !important;max-height:70vh}
+}
+
+@media(min-width:1100px){
+  .tools-grid{grid-template-columns:repeat(4,1fr)}
+}
+
 @media (max-width: 768px) {
   .timeline-item {
     flex-direction: column;
