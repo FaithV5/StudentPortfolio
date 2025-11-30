@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
           pointRadius:4
         }]
       },
-      options: {responsive:true, plugins:{legend:{display:false}}, scales:{y:{beginAtZero:false, reverse:true}}}
+      options: {responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{y:{beginAtZero:false, reverse:true}}}
     });
 
     const numericChartGwas = chartGwaData.filter(v=>Number.isFinite(v));
@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       options: {
         responsive:true,
+        maintainAspectRatio:false,
         plugins:{legend:{display:false}},
         scales:{y:{beginAtZero:true, reverse:true, ticks:{stepSize:1}}}
       }
