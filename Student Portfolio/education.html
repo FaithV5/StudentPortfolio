@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Education & Experience — Faith M. Valencia</title>
+  <title>Education</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,6 @@
 <body>
   <div class="sky" aria-hidden="true"></div>
 
-  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">
@@ -49,12 +48,64 @@
         <h1>Education</h1>
       </div>
 
-      <!-- Timeline Section -->
+      <div class="gwa-scoreboards card">
+        <h3>GWA Scoreboards</h3>
+        <div class="gwa-grid">
+          <div class="gwa-card" data-label="1st Year 1st Semester" data-gwa="1.4457" data-rank="2">
+            <div class="gwa-label">1st Year 1st Semester</div>
+            <div class="gwa-value">1.4457</div>
+            <div class="gwa-rank">Rank: 2</div>
+          </div>
+
+          <div class="gwa-card" data-label="1st Year 2nd Semester" data-gwa="1.2826" data-rank="1">
+            <div class="gwa-label">1st Year 2nd Semester</div>
+            <div class="gwa-value">1.2826</div>
+            <div class="gwa-rank">Rank: 1</div>
+          </div>
+
+          <div class="gwa-card" data-label="2nd Year 1st Semester" data-gwa="1.5652" data-rank="6">
+            <div class="gwa-label">2nd Year 1st Semester</div>
+            <div class="gwa-value">1.5652</div>
+            <div class="gwa-rank">Rank: 6</div>
+          </div>
+
+          <div class="gwa-card" data-label="2nd Year 2nd Semester" data-gwa="1.4783" data-rank="5">
+            <div class="gwa-label">2nd Year 2nd Semester</div>
+            <div class="gwa-value">1.4783</div>
+            <div class="gwa-rank">Rank: 5</div>
+          </div>
+
+          <div class="gwa-card" data-label="SHS GWA" data-gwa="93">
+            <div class="gwa-label">SHS GWA</div>
+            <div class="gwa-value">93</div>
+            <div class="gwa-honor">With Honors</div>
+          </div>
+
+          <div class="gwa-card" data-label="JHS GWA" data-gwa="90">
+            <div class="gwa-label">JHS GWA</div>
+            <div class="gwa-value">90</div>
+            <div class="gwa-honor">With Honors</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-charts">
+        <div class="card">
+          <h3>College Academic Performance (GWA)</h3>
+          <div class="chart-wrapper">
+            <canvas id="gwaChart" aria-label="GWA line chart" role="img"></canvas>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>College Ranking Over Time</h3>
+          <canvas id="rankingChart" aria-label="Ranking line chart" role="img"></canvas>
+        </div>
+      </div>
+
       <div class="timeline-container">
         <div class="timeline">
-          <!-- Project Polaris moved to Seminars page -->
 
-          <!-- College -->
           <div class="timeline-item">
             <div class="timeline-marker">
               <div class="marker-icon">
@@ -67,21 +118,11 @@
                 <h3>College Student</h3>
                 <span class="timeline-date">2023 - Present</span>
               </div>
-              <div class="timeline-institution">Batangas State University</div>
+              <div class="timeline-institution">BatStateU The NEU - Mabini Campus</div>
               <div class="timeline-role">BS in Information Technology - Business Analytics</div>
-              <div class="achievements">
-                <h4>Key Achievements:</h4>
-                <ul>
-                  <li><strong>1st Year 1st Semester:</strong>Rank 2 | <strong>GWA:</strong> 1.4457</li>
-                  <li><strong>1st Year 2nd Semester:</strong> Rank 1 | <strong>GWA:</strong> 1.2826</li>
-                  <li><strong>2nd Year 1st Semester:</strong> Rank 6 | <strong>GWA:</strong> 1.5652</li>
-                  <li><strong>2nd Year 2nd Semester:</strong> Rank 5 | <strong>GWA:</strong> 1.4783</li>
-                </ul>
-              </div>
             </div>
           </div>
 
-          <!-- Senior High School -->
           <div class="timeline-item">
             <div class="timeline-marker">
               <div class="marker-icon">
@@ -96,18 +137,9 @@
               </div>
               <div class="timeline-institution">AASMNHS</div>
               <div class="timeline-role">Science, Technology, Engineering, and Mathematics (STEM)</div>
-              <div class="achievements">
-                <h4>Notable Accomplishments:</h4>
-                <ul>
-                  <li>Graduated with High Honors</li>
-                  <li><strong>GWA:</strong> 93</li>
-                  <li>3rd Place on thesis for Inquires, Investigation, and Immersion</li>
-                </ul>
-              </div>
             </div>
           </div>
 
-          <!-- Junior High School -->
           <div class="timeline-item">
             <div class="timeline-marker">
               <div class="marker-icon">
@@ -122,18 +154,10 @@
               </div>
               <div class="timeline-institution">AASMNHS</div>
               <div class="timeline-role">Secondary Education</div>
-              <div class="achievements">
-                <h4>Achievements:</h4>
-                <ul>
-                  <li>Graduated with Honors</li>
-                  <li><strong>GWA:</strong> 90</li>
-                  <li>Developed leadership skills</li>
-                </ul>
               </div>
             </div>
           </div>
 
-          <!-- Elementary -->
           <div class="timeline-item">
             <div class="timeline-marker">
               <div class="marker-icon">
@@ -148,19 +172,12 @@
               </div>
               <div class="timeline-institution">SMSPES</div>
               <div class="timeline-role">Primary Education</div>
-              <div class="achievements">
-                <h4>Early Achievements:</h4>
-                <ul>
-                  <li>Consistent Achiver Student</li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
       </div>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-content">
@@ -189,11 +206,13 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2023 Faith M. Valencia. All rights reserved.</p>
+        <p>&copy; <span id="footer-year"></span> Faith M. Valencia. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
   <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="education-analytics.js"></script>
 </body>
 </html>
