@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   } else {
-    labels = ['1st Year 1st Semester','1st Year 2nd Semester','2nd Year 1st Semester','2nd Year 2nd Semester'];
-    gwaData = [1.4457,1.2826,1.5652,1.4783];
-    rankingData = [2,1,6,5];
+    labels = ['1st Year 1st Semester','1st Year 2nd Semester','2nd Year 1st Semester','2nd Year 2nd Semester','3rd Year 1st Semester'];
+    gwaData = [1.4457,1.2826,1.5652,1.4783,1.5357];
+    rankingData = [2,1,6,5,5];
     chartLabels = labels.slice();
     chartGwaData = gwaData.slice();
     chartRankingData = rankingData.slice();
@@ -96,3 +96,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
