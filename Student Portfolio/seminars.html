@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seminars</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span>Portfolio</span>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">About</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="seminars.html" class="nav-link active">Seminars</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <div class="theme-toggle-container">
+          <label class="theme-switch" title="Toggle light / dark">
+            <input id="theme-toggle" type="checkbox" aria-label="Toggle theme">
+            <span class="slider" aria-hidden="true">
+              <span class="icon sun" aria-hidden="true"><i class="fa-solid fa-sun"></i></span>
+              <span class="icon moon" aria-hidden="true"><i class="fa-solid fa-moon"></i></span>
+            </span>
+          </label>
+        </div>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="content">
+    <section class="seminars-section">
+      <div class="section-header">
+        <h1>Seminars & Trainings</h1>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline" id="seminars-timeline">
+          <p>Loading seminars and trainings...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Faith M. Valencia</h3>
+          <p>Front-end Developer & IT Student</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/valencia.faith.05" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto: faithm.valencia5@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/FaithV5" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p><i class="fa-solid fa-location-dot"></i> San Pedro, Bauan, Batangas</p>
+          <p><i class="fa-solid fa-phone"></i> 09938564676</p>
+          <p><i class="fa-solid fa-envelope"></i> faithm.valencia5@gmail.com</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="index.html">About</a>
+          <a href="education.html">Education</a>
+          <a href="skills.html">Skills</a>
+          <a href="seminars.html">Seminars</a>
+          <a href="projects.html">Projects</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year">2025</span> Faith M. Valencia. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="supabase-client.js"></script>
+  <script src="seminars-data.js"></script>
+</body>
+</html>
