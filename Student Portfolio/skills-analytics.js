@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', async function(){
 
   async function fetchRepoLanguages(user){
     try{
-      const reposRes = await fetch(`https://api.github.com/users/${user}/repos?per_page=100`);
-      if(!reposRes.ok) throw new Error('repos fetch failed');
+      const reposRes = await fetch(`https://api.github.com/users/${user}`);
+      if (!response.ok) throw new Error('Failed to fetch language data');
       const repos = await reposRes.json();
       const langTotals = {};
       const limited = repos.slice(0, 60);
