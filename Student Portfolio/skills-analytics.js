@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', async function(){
 
   async function fetchRepoLanguages(user){
     try{
-      const reposRes = await fetch(`https://api.github.com/users/${user}`);
+      const response = await fetch(`/api/github/languages?username=${user}`);
       if (!response.ok) throw new Error('Failed to fetch language data');
-      const repos = await reposRes.json();
+      return await response.json();
       const langTotals = {};
       const limited = repos.slice(0, 60);
       const langPromises = limited.map(r=>fetch(r.languages_url).then(res=>res.ok?res.json():{}).catch(()=>({}))); 
