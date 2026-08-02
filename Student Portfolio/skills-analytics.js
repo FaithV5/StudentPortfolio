@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async function(){
 
   async function fetchRepoLanguages(user){
     try{
-      const reposRes = await fetch(`https://api.allorigins.win/raw?url=https://api.github.com/users/${user}/repos?per_page=100`);
+      const reposRes = await fetch(`https://corsproxy.io/?url=https://api.github.com/users/${user}/repos?per_page=100`);
       if(!reposRes.ok) throw new Error('repos fetch failed');
       const repos = await reposRes.json();
       const langTotals = {};
