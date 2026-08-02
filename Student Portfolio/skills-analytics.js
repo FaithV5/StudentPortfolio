@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async function(){
 
   function toChartData(langTotals){
     const entries = Object.entries(langTotals).sort((a,b)=>b[1]-a[1]);
-    const top = entries.slice(0,5);
+    const top = entries.slice(0,3);
     return {
       labels: top.map(e=>e[0]),
       data: top.map(e=>Math.round(e[1]/1000))
